@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Račun za električnu energiju</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="invoice">
+      <div class="invoice-header">
+        <h1>Račun za električnu energiju</h1>
+        <p>Broj računa: 0123456</p>
+      </div>
+      <div class="invoice-body">
+        <h2>Podaci o korisniku</h2>
+        <p>Ime i prezime: Sasa Petrovic</p>
+        <p>Adresa: Neka adresa 3/7</p>
+        <p>Grad: Nis</p>
+        <h2>Izveštaj o potrošnji</h2>
+        <p>Period: Januar 2023</p>
+        <p>Ukupno potrošeno: <input type="text" id="kWh"> kw</p>
+        <p>Cena po kilovat-času: <input type="text" id="cenaPoKWh"> din.</p>
+        <p>Ukupna cena: <span id="ukupnaCena"></span> din.</p>
+      </div>
+      <div class="invoice-footer">
+        <p>Račun je validan do 10. februara 2023.</p>
+        <button id="racunaj">Izračunaj</button>
+      </div>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>
